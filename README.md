@@ -1,16 +1,30 @@
 # Team Profile Generator
 
 ## Description
-It is important for a manager/team leader to be able to contact team members easily. With the help of this application, the manager is able to have the team member's emails and GitHub profiles displayed on a webpage and hence have easy access to their basic information. 
+  It is important for a manager/team leader to be able to contact team members easily. With the help of this application, the manager is able to have the team member's emails and GitHub profiles displayed on a webpage and hence have easy access to their basic information. 
 
-This application is used to create a webpage that displays summaries of employees detail from a software engineering team. The data is collected through user input on the command-line using Node.js and Inquirer. 
+  This application is used to create a webpage that displays summaries of employees detail from a software engineering team. The data is collected through user input on the command-line using Node.js and Inquirer. 
+
+
+## Table of Contents
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Demonstration](#demonstration)
+  - [License](#license)
+  - [User Story](#user-story)
+  - [Acceptance Criteria](#acceptance-criteria)
+  - [Questions](#questions)
+  - [Credits](#credits)
+
 
 ## Installation 
-Before attempting to use this application, you must have the follow programs installed to your computer: 
+  Before attempting to use this application, you must have the follow programs installed to your computer: 
 
-- VS Code
-- GitBash
-- Node.js
+  - VS Code
+  - GitBash
+  - Node.js
   
   In the terminal of VS Code please install the following packages: 
   ```bash
@@ -20,21 +34,21 @@ Before attempting to use this application, you must have the follow programs ins
   [Jest](https://www.npmjs.com/package/jest) for running the unit tests 
 
 ## Usage
-The application will be invoked by using the following command:
+  The application will be invoked by using the following command:
 
-```bash
-node index.js
-```
+  ```bash
+  node index.js
+  ```
 
 
 ## Demonstration
-The following animation demonstates a mock up for the use of this application generated HTML’s appearance and functionality:
+  The following animation demonstates a mock up for the use of this application generated HTML’s appearance and functionality:
 
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
+  ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
 
 
 ## License 
-![License](https://img.shields.io/github/license/lalalaviv/Team-Profile-Generator)
+  ![License](https://img.shields.io/github/license/lalalaviv/Team-Profile-Generator)
 
 ## User Story
 
@@ -67,14 +81,14 @@ THEN I exit the application, and the HTML is generated
 ```
 
 ## Questions
-Feel free to reach out if you have any enquiries
-<br/>
-GitHub: [@lalalaviv](https://github.com/lalalaviv)
-Email: lalala.viv@hotmail.com
+  Feel free to reach out if you have any enquiries
+  <br/>
+  GitHub: [@lalalaviv](https://github.com/lalalaviv)
+  Email: lalala.viv@hotmail.com
 
 
 ## Credits
-Vivian Lee
+  Vivian Lee
 
 
 
