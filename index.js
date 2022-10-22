@@ -10,6 +10,11 @@ const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
 // Import HTML templates 
+const addManagerCard = require('./src/manager-template');
+const addEngineerCard = require('./src/engineer-template');
+const addInternCard = require('./src/intern-template');
+const wrapProfileCards = require('./src/card-wrapper');
+
 
 // Empty array for team members
 const team = [];
@@ -278,13 +283,13 @@ function generateHtml(profiles) {
     let profileCards = '';
     profiles.forEach((profile) => {
         if (profile instanceof Manager) {
-            const card = addManagerTemplate(profile);
+            const card = addManagerCard(profile);
             profileCards += card;
         } else if (profile instanceof Engineer) {
-            const card = addEngineerTemplate(profile);
+            const card = addEngineerCard(profile);
             profileCards += card;
         } else if (profile instanceof Intern) {
-            const card = addInternTemplate(profile);
+            const card = addInternCard(profile);
             profileCards += card;
         }
     })
@@ -297,7 +302,7 @@ function generateHtml(profiles) {
 
 // Function to write the final HTML document in dist folder
 function writeHtml(newHtml) {
-    fs.writeFile('./dist/team-profile.html', newHtml, (err) => {
+    fs.writeFile('./dist/my-team-profile.html', newHtml, (err) => {
         if (err) throw err;
         console.log('HTML document successfully created in /dist folder.');
     });

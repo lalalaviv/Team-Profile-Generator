@@ -32,14 +32,14 @@ describe("Engineer", () => {
     it("Should return the object's id property", () => {
       const engineer = new Engineer("John Smith", 1, "johnsmith@gmail.com", "johnsmithgithub");
 
-      expect(engineer.getID()).toEqual(1);
+      expect(engineer.getId()).toEqual(1);
     });
   });
 
   
   describe("getEmail", () => {
     it("Should return the object's email property", () => {
-      const engineer = new Engineer("John Smith", 1, "johnsmithgmail.com", "johnsmithgithub");
+      const engineer = new Engineer("John Smith", 1, "johnsmith@gmail.com", "johnsmithgithub");
 
       expect(engineer.getEmail()).toEqual("johnsmith@gmail.com");
     });
@@ -50,7 +50,7 @@ describe("Engineer", () => {
     it("Should return the object's github property", () => {
       const engineer = new Engineer("John Smith", 1, "johnsmith@gmail.com", "johnsmithgithub");
 
-      expect(engineer.getGithub()).toEqual("janedoegit");
+      expect(engineer.getGithub()).toEqual("johnsmithgithub");
     });
   });
 

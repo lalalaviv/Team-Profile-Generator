@@ -22,7 +22,7 @@ describe("Manager", () => {
     it("Should return the object's name property", () => {
       const manager = new Manager("John Smith", 1, "johnsmith@gmail.com", 20);
 
-      expect(manager.getName()).toEqual("Jane Doe");
+      expect(manager.getName()).toEqual("John Smith");
     });
   });
 
@@ -30,7 +30,7 @@ describe("Manager", () => {
     it("Should return the object's id property", () => {
       const manager = new Manager("John Smith", 1, "johnsmith@gmail.com", 20);
 
-      expect(manager.getID()).toEqual(1);
+      expect(manager.getId()).toEqual(1);
     });
   });
 

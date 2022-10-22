@@ -46,7 +46,7 @@
 ## Demonstration
   The following animation demonstates a mock up for the use of this application generated HTML’s appearance and functionality:
 
-  ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
+  ![HTML webpage titled “My Team” features displays boxes with listing employee names, titles, and other key info.]()
 
 
 ## License 

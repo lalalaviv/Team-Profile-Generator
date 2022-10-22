@@ -12,7 +12,7 @@ const engineerTemplate = (profile) => `
       <ul class="list-group">
         <li class="list-group-item">
           <span class="font-weight-bold">ID: </span>
-          ${profile.getID()}
+          ${profile.getId()}
         </li>
         <li class="list-group-item">
           <span class="font-weight-bold">Email: </span>
