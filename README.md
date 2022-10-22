@@ -3,7 +3,7 @@
 ## Description
   It is important for a manager/team leader to be able to contact team members easily. With the help of this application, the manager is able to have the team member's emails and GitHub profiles displayed on a webpage and hence have easy access to their basic information. 
 
-  This application is used to create a webpage that displays summaries of employees detail from a software engineering team. The data is collected through user input on the command-line using Node.js and Inquirer. 
+  This application is used to create a webpage that displays summaries of employees detail from a software engineering team. The data is collected through user input on the command-line using Node.js. 
 
 
 ## Table of Contents
@@ -29,9 +29,11 @@
   In the terminal of VS Code please install the following packages: 
   ```bash
   npm init -y
+  npm i fs
   ```
- [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting user input
-  [Jest](https://www.npmjs.com/package/jest) for running the unit tests 
+
+ - [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting user input
+ - [Jest](https://www.npmjs.com/package/jest) for running the unit tests 
 
 ## Usage
   The application will be invoked by using the following command:

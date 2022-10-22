@@ -246,4 +246,59 @@ function ask(questionArr) {
 }
 
 
+function createProfiles(team) {
 
+    const profiles = team.map((member) => {
+        const { name, id, email } = member;
+
+        // If you're adding a manager, ask for office number
+        if (member.hasOwnProperty('officeNumber')) {
+            const { officeNumber } = member;
+            return new Manager(name, id, email, officeNumber);
+        }
+
+        // if you're adding an engineer, as for github
+        if (member.hasOwnProperty('github')) {
+            const { github } = member;
+            return new Engineer(name, id, email, github);
+        }
+
+        // if you're adding an intern, ask for school
+        if (member.hasOwnProperty('school')) {
+            const { school } = member;
+            return new Intern(name, id, email, school);
+        }
+    });
+
+    // Generate HTML from the profiles made
+    generateHtml(profiles);
+}
+
+function generateHtml(profiles) {
+    let profileCards = '';
+    profiles.forEach((profile) => {
+        if (profile instanceof Manager) {
+            const card = addManagerTemplate(profile);
+            profileCards += card;
+        } else if (profile instanceof Engineer) {
+            const card = addEngineerTemplate(profile);
+            profileCards += card;
+        } else if (profile instanceof Intern) {
+            const card = addInternTemplate(profile);
+            profileCards += card;
+        }
+    })
+
+
+    const newHtml = wrapProfileCards(profileCards);
+
+    writeHtml(newHtml);
+};
+
+// Function to write the final HTML document in dist folder
+function writeHtml(newHtml) {
+    fs.writeFile('./dist/team-profile.html', newHtml, (err) => {
+        if (err) throw err;
+        console.log('HTML document successfully created in /dist folder.');
+    });
+};
