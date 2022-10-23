@@ -46,7 +46,9 @@
 ## Demonstration
   The following animation demonstates a mock up for the use of this application generated HTML’s appearance and functionality:
 
-  ![HTML webpage titled “My Team” features displays boxes with listing employee names, titles, and other key info.]()
+  ![HTML webpage titled “My Team” features displays boxes with listing employee names, titles, and other key info.](https://user-images.githubusercontent.com/106384519/197366918-755f1293-4d15-4998-a1b1-d6b69c686626.mp4)
+  <br/>
+  https://user-images.githubusercontent.com/106384519/197366918-755f1293-4d15-4998-a1b1-d6b69c686626.mp4
 
 
 ## License 
